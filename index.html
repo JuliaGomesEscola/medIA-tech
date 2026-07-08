@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doe+ | ODS 3 Saúde e Bem-Estar</title>
+  <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="main-header">
+      <div class="logo">Doe<span>+</span></div>
+      <p class="subtitle">ODS 3: Saúde e Bem-Estar • Incentivo à Doação de Sangue</p>
+    </header>
+
+    <section class="impact-card">
+      <h3>❤️ Seu impacto na comunidade</h3>
+      <p><strong>Seu sangue saiu para o estoque de emergência recentemente.</strong> Você ajudou a manter o estoque seguro!</p>
+    </section>
+
+    <main class="dashboard-grid">
+      
+      <div class="left-column">
+        <section class="card profile-card">
+          <h2>Seu Perfil de Doador</h2>
+          <div class="profile-info">
+            <p><strong>Doador(a):</strong> Usuário</p>
+            <p><strong>Tipo Sanguíneo:</strong> O-</p>
+            <p><strong>Idade:</strong> 18 anos</p>
+          </div>
+          
+          <div class="level-box">
+            <div class="level-header">
+              <span><strong>Nível Atual:</strong> Bronze</span>
+              <span>Próximo: Prata</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill azul" style="width: 40%"></div>
+            </div>
+            <p class="level-footer">Faça mais 1 doação para subir de nível e liberar novos benefícios!</p>
+          </div>
+        </section>
+
+        <section class="card chatbot-card">
+          <h2>💬 LIA Assistente Virtual </h2>
+          <p class="card-instruction">Tire dúvidas sobre locais de doação em Maringá e requisitos.</p>
+          <div class="chatbot-messages" id="chat-messages">
+            <p class="bot-msg">Olá, Usuário! Sou o assistente Doe+. Vi que você gosta de futebol e hambúrguer. Sabia que temos cupons para o próximo jogo do Maringá FC e descontos em lanchonetes parceiras para quem está no nível Prata?</p>
+          </div>
+          <div class="chatbot-input-area">
+            <input type="text" id="chat-input" placeholder="Pergunte sobre locais ou requisitos..." onkeypress="checkEnter(event)">
+            <button onclick="enviarMensagem()">Enviar</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="card benefits-card">
+          <h2>🎁 Seus Benefícios Personalizados</h2>
+          <p class="card-instruction">A IA selecionou essas vantagens com base nos seus gostos:</p>
+          
+          <div class="benefits-tabs">
+            <button class="tab-btn active" onclick="switchTab('exclusivos')">Exclusivos (Parcerias)</button>
+            <button class="tab-btn" onclick="switchTab('lei')">Garantidos por Lei</button>
+          </div>
+
+          <div id="tab-exclusivos" class="tab-content">
+            <div class="benefit-item">
+              <span class="badge bronze">Disponível</span>
+              <h4>🍔 15% OFF em Restaurantes de Maringá</h4>
+              <p>Válido para jantares de segunda a quinta-feira nas hamburguerias parceiras.</p>
+            </div>
+            <div class="benefit-item">
+              <span class="badge bronze">Disponível</span>
+              <h4>🎟️ Ingresso disponível para ultilização no CineIngá</h4>
+              <p>Você tem um ingresso de cinema disponível para ultilizar no cinema de segunda a quarta.</p>
+            </div>
+            <div class="benefit-item locked">
+              <span class="badge prata">Bloqueado (Nível Prata)</span>
+              <h4>⚽ Ingresso cortesia para jogos do Maringá FC</h4>
+              <p>Disponível para jogos selecionados no Estádio Willie Davids.</p>
+            </div>
+          </div>
+
+          <div id="tab-lei" class="tab-content hidden">
+            <div class="benefit-item">
+              <span class="badge lei">Direito Garantido</span>
+              <h4>⚖️ Meia-Entrada em Cinemas e Ingressos</h4>
+              <p>Garantido por lei estadual para doadores recorrentes de sangue.</p>
+            </div>
+            <div class="benefit-item">
+              <span class="badge lei">Direito Garantido</span>
+              <h4>💼 1 dia de Folga no Trabalho (CLT)</h4>
+              <p>Direito a se ausentar do trabalho no dia da doação regulamentado pela CLT.</p>
+            </div>
+            <div class="benefit-item">
+              <span class="badge lei">Direito Garantido</span>
+              <h4>📝 Isenção de Taxa em Concursos Públicos</h4>
+              <p>Isenção garantida em diversos concursos municipais e estaduais.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

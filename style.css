@@ -1,0 +1,119 @@
+:root {
+  --blood-red: #8b0000;       
+  --blood-red-hover: #660000; 
+  --trust-blue: #1e3a8a;      
+  --trust-blue-hover: #172554;
+  --off-white: #f8fafc;       
+  --card-white: #ffffff;      
+  --text-color: #0f172a;      
+  --text-muted: #475569;     
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+}
+.main-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--blood-red);
+}
+.logo span { color: var(--trust-blue); }
+.subtitle { margin: 5px 0 0; color: var(--text-muted); font-size: 1.1rem; }
+
+.impact-card {
+  background-color: var(--blood-red);
+  color: var(--off-white);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(139, 0, 0, 0.15);
+}
+.impact-card h3 { margin: 0 0 5px 0; }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--card-white);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid var(--blood-red);
+}
+
+.card h2 { margin-top: 0; color: var(--blood-red); font-size: 1.4rem; }
+.card-instruction { color: var(--text-muted); font-size: 0.9rem; margin:-10px 0 20px 0; }
+.level-box {
+  background-color: var(--off-white);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: 1px solid #e2e8f0;
+}
+.level-header { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px; }
+.level-footer { font-size: 0.85rem; color: var(--text-muted); margin: 8px 0 0 0; }
+
+.progress-bar { background-color: #e2e8f0; border-radius: 6px; overflow: hidden; height: 10px; }
+.progress-fill.azul { height: 100%; background-color: var(--trust-blue); }
+.chatbot-messages {
+  height: 150px;
+  padding: 10px;
+  overflow-y: auto;
+  background: var(--off-white);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+.bot-msg { background: #e2e8f0; padding: 8px 12px; border-radius: 8px; margin: 5px 0; }
+.user-msg { background: var(--trust-blue); color: white; padding: 8px 12px; border-radius: 8px; margin: 5px 0; text-align: right; }
+.chatbot-input-area { display: flex; }
+.chatbot-input-area input { flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px 0 0 6px; outline: none; }
+.chatbot-input-area button { background: var(--trust-blue); color: white; border: none; padding: 10px 15px; border-radius: 0 6px 6px 0; cursor: pointer; font-weight: bold; }
+.benefits-tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+.tab-btn { background: none; border: none; padding: 8px 16px; cursor: pointer; font-weight: bold; color: var(--text-muted); font-size: 0.95rem; }
+.tab-btn.active { color: var(--blood-red); border-bottom: 3px solid var(--blood-red); }
+
+.benefit-item {
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--off-white);
+  margin-bottom: 12px;
+  border-left: 4px solid var(--trust-blue);
+  position: relative;
+}
+.benefit-item.locked { border-left-color: #cbd5e1; opacity: 0.7; }
+.benefit-item h4 { margin: 0 0 5px 0; font-size: 1rem; color: var(--text-color); }
+.benefit-item p { margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+
+.badge { font-size: 0.75rem; font-weight: bold; padding: 3px 8px; border-radius: 50px; float: right; }
+.badge.bronze { background-color: #dcfce7; color: #166534; }
+.badge.prata { background-color: #f1f5f9; color: #475569; }
+.badge.lei { background-color: #dbeafe; color: #1e40af; }
+.hidden { display: none; }
