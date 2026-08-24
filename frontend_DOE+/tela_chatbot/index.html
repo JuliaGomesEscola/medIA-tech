@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DOE+ | ChatBot LIA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styleLIA.css" />
+</head>
+<body>
+
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-hidden="true">
+    <div class="side-menu-header">
+      <span class="side-menu-title">DOE<span class="logo-plus">+</span></span>
+      <button class="close-menu" id="closeMenu" aria-label="Fechar menu">&times;</button>
+    </div>
+    <nav class="side-menu-links">
+      <button class="menu-btn">Tela Inicial 🏠</button>
+      <button class="menu-btn">Dashboard 📊</button>
+      <button class="menu-btn">Benefícios 🎁</button>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sideMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">DOE<span class="logo-plus">+</span></div>
+    <div class="avatar">U</div>
+  </header>
+  <main class="chat-container">
+    
+    <div class="chat-header">
+      <div class="lia-avatar-header">
+
+        <svg viewBox="0 0 100 100" width="48" height="48" class="blood-drop-icon">
+          <defs>
+            <linearGradient id="dropGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF5252"/>
+              <stop offset="100%" stop-color="#D62828"/>
+            </linearGradient>
+          </defs>
+ 
+          <path d="M50 8 C50 8, 18 45, 18 68 A32 32 0 0 0 82 68 C82 45, 50 8, 50 8 Z" fill="url(#dropGradient)" />
+         
+          <path d="M34 48 Q30 58 32 68" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+         
+          <circle cx="42" cy="65" r="3.5" fill="#1E293B" />
+          <circle cx="58" cy="65" r="3.5" fill="#1E293B" />
+         
+          <path d="M45 73 Q50 78 55 73" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none" />
+         
+          <circle cx="36" cy="69" r="3.5" fill="#FF8A8A" opacity="0.7" />
+          <circle cx="64" cy="69" r="3.5" fill="#FF8A8A" opacity="0.7" />
+        </svg>
+      </div>
+
+      <div class="lia-info">
+        <h2>LIA <span class="status-dot"></span></h2>
+        <p>Assistente Virtual de Doação • <span>DOE+</span></p>
+      </div>
+    </div>
+
+    
+    <div class="chat-messages" id="chat-messages">
+      
+      <div class="message lia-message">
+        <div class="message-avatar">
+          <svg viewBox="0 0 100 100" width="32" height="32">
+            <path d="M50 8 C50 8, 18 45, 18 68 A32 32 0 0 0 82 68 C82 45, 50 8, 50 8 Z" fill="url(#dropGradient)" />
+            <circle cx="42" cy="65" r="3.5" fill="#1E293B" />
+            <circle cx="58" cy="65" r="3.5" fill="#1E293B" />
+            <path d="M45 73 Q50 78 55 73" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+        <div class="message-content">
+          <p>Olá, <strong>Usuário</strong>! Sou a <strong>LIA</strong>, sua assistente virtual no <strong>DOE+</strong>.</p>
+          <p>Como posso te ajudar hoje com suas dúvidas sobre doação, seus benefícios do nível Avançado ou como ultilizar o nosso sistema?</p>
+        </div>
+      </div>
+
+      <div class="suggestions-container" id="suggestions">
+        <p class="suggestions-title">💡 Dúvidas frequentes (clique para perguntar):</p>
+        <div class="suggestions-grid">
+          <button class="chip-btn" onclick="sendSuggested('Quem tem direito à meia-entrada?')">🎟️ Como funciona a meia-entrada ofertada pelo governo federal?</button>
+          <button class="chip-btn" onclick="sendSuggested('Qual o intervalo mínimo entre doações?')">⏱️ Intervalo entre doações</button>
+          <button class="chip-btn" onclick="sendSuggested('Quais os requisitos básicos para doar sangue?')">📋 Requisitos para doar</button>
+          <button class="chip-btn" onclick="sendSuggested('Como chegar ao próximo nível de benefícios?')">🚀 Como subir de nível?</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-input-area">
+      <form id="chat-form" onsubmit="handleSend(event)">
+        <input 
+          type="text" 
+          id="chat-input" 
+          placeholder="Digite sua dúvida para a LIA..." 
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="send-btn" aria-label="Enviar Mensagem">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 DOE+ | <strong>MedIA-Tech</strong>. 
+  </footer>
+
+  <script src="scriptchatbot.js"></script>
+</body>
+</html>

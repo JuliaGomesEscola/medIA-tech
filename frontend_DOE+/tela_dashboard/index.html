@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - DOE+</title>
+  <link rel="stylesheet" href="styleDashboard.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="menu-icon">&#9776;</div>
+    <div class="logo">DOE<span>+</span></div>
+    <div class="user-avatar">U</div>
+  </header>
+
+  <main class="dashboard-container">
+
+
+    <section class="card welcome-card">
+      <div class="welcome-text">
+        <h2>Olá, Usuário! 👋</h2>
+        <p>Acompanhe o impacto das suas doações e métricas do sistema.</p>
+      </div>
+      <button class="btn-action">Ver Detalhes &rarr;</button>
+    </section>
+
+
+    <section class="kpi-grid">
+      <div class="card kpi-card">
+        <span class="kpi-label">Informação a Definir 1</span>
+        <div class="kpi-value" id="kpi1">0</div>
+        <span class="kpi-subtext">Meta: 100</span>
+      </div>
+
+      <div class="card kpi-card highlight">
+        <span class="kpi-label">Informação a Definir 2</span>
+        <div class="kpi-value" id="kpi2">0</div>
+        <span class="kpi-subtext">Status: Ativo</span>
+      </div>
+
+      <div class="card kpi-card">
+        <span class="kpi-label">Informação a Definir 3</span>
+        <div class="kpi-value" id="kpi3">0%</div>
+        <span class="kpi-subtext">Atualizado hoje</span>
+      </div>
+    </section>
+
+    <section class="card chart-card">
+      <div class="chart-header">
+        <h3>Evolução de [Informação a Definir]</h3>
+        <span class="badge">A Definir</span>
+      </div>
+      <div class="chart-container">
+        <canvas id="simpleChart"></canvas>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    DOE+ &bull; Desenvolvido com carinho pela equipe <strong>MedIA-Tech</strong>
+  </footer>
+
+  <script src="scriptdashboard.js"></script>
+</body>
+</html>
