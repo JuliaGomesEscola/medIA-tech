@@ -1,0 +1,104 @@
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+Id_paciente,Idade_paciente,sexo_paciente,peso_paciente,tipo_sanguíneo_paciente,fator_rh,primeira_doação,última_doação,esta_saudável_hoje?,tatuagem_ultimos_12_meses,status_aptidao,motivo_inaptidao,data_proxima_doação_permitida
+1,23,F,60,A+,,não,30,sim,sim,Inapto,Intervalo e tatuagem recente,-
+2,17,M,64,O+,,sim,-,não,não,Inapto,Inaptidão clínica,-
+3,30,F,55,B+,,não,130,sim,não,Apto,-,-
+4,25,F,65,O-,,não,45,sim,não,Inapto,Intervalo insuficiente,-
+5,41,M,70,AB+,,não,150,sim,não,Apto,-,-
+6,16,F,48,O+,,sim,-,sim,não,Inapto,Peso abaixo do mínimo,-
+7,25,M,72,B+,,sim,-,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+8,48,F,68,AB+,,não,190,sim,não,Apto,-,-
+9,89,F,65,O-,,sim,-,sim,não,Inapto,Idade acima do limite,-
+10,32,F,56,O-,,não,50,não,não,Inapto,Inaptidão clínica e intervalo,-
+11,56,M,69,AB-,,não,80,não,não,Inapto,Inaptidão clínica,-
+12,34,M,98,A+,,sim,-,sim,sim,Inapto,Tatuagem recente,-
+13,49,F,58,O+,,não,45,não,não,Inapto,Inaptidão clínica e intervalo,-
+14,18,M,64,B-,,sim,-,não,não,Inapto,Inaptidão clínica,-
+15,28,M,67,A+,,sim,-,não,não,Inapto,Inaptidão clínica,-
+16,45,F,49,O-,,não,37,sim,não,Inapto,Peso e intervalo insuficientes,-
+17,15,F,55,AB+,,sim,-,sim,não,Inapto,Idade abaixo do permitido,-
+18,19,M,46,A+,,não,90,não,sim,Inapto,"Peso, saúde e tatuagem",-
+19,35,F,58,A+,,não,48,sim,não,Inapto,Intervalo insuficiente,-
+20,42,M,62,AB-,,não,65,sim,não,Apto,-,-
+21,47,M,85,B+,,sim,-,não,não,Inapto,Inaptidão clínica,-
+22,20,M,90,A+,,sim,-,sim,sim,Inapto,Tatuagem recente,-
+23,56,F,84,AB+,,não,100,sim,não,Apto,-,-
+24,43,F,75,O-,,não,60,sim,não,Inapto,Intervalo insuficiente,-
+25,17,M,64,A+,,não,25,não,não,Inapto,Inaptidão clínica e intervalo,-
+26,27,F,85,A+,,sim,-,sim,não,Apto,-,-
+27,21,F,70,A+,,não,73,não,sim,Inapto,"Intervalo, saúde e tatuagem",-
+28,33,F,65,AB-,,não,90,sim,não,Apto,-,-
+29,46,M,73,B-,,não,75,não,não,Inapto,Inaptidão clínica,-
+30,88,M,62,A+,,não,89,sim,não,Inapto,Idade acima do limite,-
+31,54,F,64,B+,,sim,-,sim,não,Apto,-,-
+32,22,F,47,O-,,sim,-,sim,não,Inapto,Peso abaixo do mínimo,-
+33,19,F,45,A+,,não,190,sim,não,Inapto,Peso abaixo do mínimo,-
+34,34,F,53,AB+,,não,35,não,sim,Inapto,"Intervalo, saúde e tatuagem",-
+35,67,M,58,O-,,sim,-,sim,não,Inapto,Primeira doação após 60,-
+36,74,F,65,O-,,não,100,sim,não,Inapto,Idade acima do limite,-
+37,29,M,87,B-,,não,120,sim,não,Apto,-,-
+38,30,M,46,A+,,não,45,sim,não,Inapto,Peso e intervalo insuficientes,-
+39,46,F,57,AB+,,não,30,não,sim,Inapto,"Intervalo, saúde e tatuagem",-
+40,59,F,60,A+,,sim,-,sim,não,Apto,-,-
+41,16,F,68,A+,,sim,-,não,não,Inapto,Inaptidão clínica,-
+42,26,M,74,B+,,não,25,sim,sim,Inapto,Intervalo e tatuagem recente,-
+43,44,F,86,O-,,sim,-,não,não,Inapto,Inaptidão clínica,-
+44,78,M,90,A+,,não,130,sim,não,Inapto,Idade acima do limite,-
+45,18,F,78,A+,,não,92,sim,não,Apto,-,-
+46,23,F,65,A+,,não,85,sim,sim,Inapto,Intervalo e tatuagem recente,-
+47,34,M,55,AB-,,sim,-,sim,não,Apto,-,-
+48,45,M,54,A+,,sim,-,não,não,Inapto,Inaptidão clínica,-
+49,57,M,74,B+,,não,45,não,não,Inapto,Inaptidão clínica e intervalo,-
+50,21,F,85,O-,,não,100,sim,sim,Inapto,Tatuagem recente,-
+51,36,M,53,A+,,sim,-,sim,não,Apto,-,-
+52,43,F,58,A+,,não,72,sim,não,Inapto,Intervalo insuficiente,-
+53,24,M,60,B+,,sim,-,sim,não,Apto,-,-
+54,48,F,65,A+,,não,30,sim,não,Inapto,Intervalo insuficiente,-
+55,79,M,80,A+,,não,90,sim,não,Inapto,Idade acima do limite,-
+56,40,F,85,A+,,não,65,não,não,Inapto,Inaptidão clínica e intervalo,-
+57,22,F,74,B+,,sim,95,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+58,36,M,65,A+,,sim,-,sim,não,Apto,-,-
+59,19,M,55,O-,,não,125,sim,sim,Inapto,Tatuagem recente,-
+60,56,F,47,AB+,,não,100,sim,não,Inapto,Peso abaixo do mínimo,-
+61,68,F,92,A-,,sim,-,não,não,Inapto,Idade e inaptidão clínica,-
+62,21,M,69,O-,,não,52,sim,sim,Inapto,Intervalo e tatuagem recente,-
+63,39,M,78,B-,,não,130,sim,não,Apto,-,-
+64,48,F,64,AB-,,não,40,sim,não,Inapto,Intervalo insuficiente,-
+65,18,M,56,A+,,sim,-,sim,sim,Inapto,Tatuagem recente,-
+66,27,M,74,A+,,sim,-,sim,não,Apto,-,-
+67,33,F,68,O-,,não,80,não,não,Inapto,Inaptidão clínica e intervalo,-
+68,78,F,55,A-,,não,140,não,não,Inapto,Idade e inaptidão clínica,-
+69,19,M,69,B-,,sim,-,sim,não,Apto,-,-
+70,22,F,58,B+,,sim,-,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+71,27,M,94,AB+,,não,190,sim,não,Apto,-,-
+72,39,F,67,O+,,não,100,sim,não,Apto,-,-
+73,21,M,54,O-,,não,35,sim,não,Inapto,Intervalo insuficiente,-
+74,56,F,43,A-,,não,60,não,não,Inapto,"Peso, intervalo e saúde",-
+75,37,M,50,O-,,sim,-,sim,não,Apto,-,-
+76,58,F,42,O+,,não,90,não,não,Inapto,Peso e inaptidão clínica,-
+77,23,M,60,O+,,sim,-,sim,sim,Inapto,Tatuagem recente,-
+78,45,F,116,A+,,não,15,sim,sim,Inapto,Intervalo e tatuagem recente,-
+79,16,M,63,A-,,sim,-,sim,não,Apto,-,-
+80,34,F,74,O-,,não,30,sim,não,Inapto,Intervalo insuficiente,-
+81,21,M,55,AB+,,não,40,não,não,Inapto,Inaptidão clínica e intervalo,-
+82,17,M,110,A-,,sim,-,sim,não,Apto,-,-
+83,35,F,85,B-,,não,90,sim,sim,Inapto,Tatuagem recente,-
+84,82,M,69,A-,,não,60,sim,não,Inapto,Idade acima do limite,-
+85,92,M,67,B+,,não,45,sim,não,Inapto,Idade e intervalo insuficiente,-
+86,18,F,76,O-,,não,100,não,não,Inapto,Inaptidão clínica,-
+87,33,M,98,O+,,sim,-,sim,sim,Inapto,Tatuagem recente,-
+88,25,F,101,A+,,não,180,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+89,43,M,78,AB+,,não,75,não,não,Inapto,Inaptidão clínica,-
+90,17,F,63,O-,,não,20,não,não,Inapto,Inaptidão clínica e intervalo,-
+91,28,M,59,A+,,sim,-,sim,não,Apto,-,-
+92,67,F,67,O-,,não,48,sim,não,Inapto,Intervalo insuficiente,-
+93,56,M,65,AB-,,sim,-,sim,não,Apto,-,-
+94,34,F,57,A+,,sim,-,sim,não,Apto,-,-
+95,21,M,63,A-,,sim,-,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+96,65,F,56,O-,,não,70,não,não,Inapto,Inaptidão clínica e intervalo,-
+97,18,M,50,A+,,não,100,sim,não,Apto,-,-
+98,17,F,62,AB+,,sim,-,não,sim,Inapto,Inaptidão clínica e tatuagem,-
+99,22,M,80,O-,,sim,-,sim,não,Apto,-,-
+100,45,F,75,A+,,não,60,sim,não,Inapto,Intervalo insuficiente,-
